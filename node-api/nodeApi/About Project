@@ -1,0 +1,17 @@
+This is a little breakdown of project.
+
+Project is made in mind that every module and route should be used for frontend dashboard application.
+Address, Branches and Cities collections and routes are auxiliary data, used for easily submitting Orders in database.
+They can be used to fetch data to be put in <select> claws for example, or something like that, so UX will be easier.
+
+Main Components are Orders, Workers and more or less Products collections and routes. In it will be embedded auxiliary data.
+Lastly Permissions collection is used for system, during registration it might be used or during updating Worker data from
+admin panel in dashboard. It's working principle is that if during registration permissions field is missing, but role will
+be for sure entered, it will fetch data from permissions collection which designed as array of names of permission and
+for role it is for.
+
+
+Every route needs permission to be fetched, except /worker/registration, /worker/login, /products/all (permission names are
+available in corresponding routes file).
+
+Please, any feedback regarding the project will be appreciated.
